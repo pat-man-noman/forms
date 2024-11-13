@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>hey</title>
+    </head>
+    <body>
+            <form method="GET">
+                
+                
+                {{ form.as_p }}
+
+
+            <button>checkout</button>
+            </form>
+            {% if total != None %}
+                <p>sub total ${{sub_total|floatformat:2}} </p>
+                <p>taxes ${{taxes|floatformat:2}} </p>
+                <h1>total ${{total|floatformat:2}}</h1>
+            {% endif %}
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

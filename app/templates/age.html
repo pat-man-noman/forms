@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>age</title>
+    </head>
+    <body>
+            <form action="{% url 'age' %}" method="GET">
+                
+                
+                {{ form.as_p }}
+
+
+            <button>submit</button>
+            </form>
+            {% if end != None %}
+                {% if end < birth%}
+                    <h1>your Math ain't Mathing</h1>
+                {%else%}
+                    <h1>you are {{age}}</h1>
+                {%endif%}
+            {% endif %}
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
